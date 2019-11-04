@@ -3,7 +3,7 @@ package org.neo4j.cypher.docgen
 import org.neo4j.cypher.docgen.tooling.{DocBuilder, Document, DocumentingTest, ResultAssertions}
 
 class FulltextIndexTest extends DocumentingTest {
-  override def outputPath = "target/docs/dev/ql/"
+  override def outputPath = "target/docs/dev/ql/administration/indexes"
 
   override def doc: Document = new DocBuilder {
     private val createMatrixMovieNode = """create (m:Movie {title: "The Matrix"}) return m.title"""
